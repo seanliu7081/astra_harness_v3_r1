@@ -31,7 +31,7 @@ astra_pip=("$astra_vision_env/bin/python" -m pip)
 "${astra_pip[@]}" install torch==2.10.0 torchvision==0.25.0 --index-url https://download.pytorch.org/whl/cu128
 "${astra_pip[@]}" install -r "$astra_root/requirements-controller.txt"
 # Minimal inference dependencies; DA3's optional UI/training/3DGS stack is not used.
-"${astra_pip[@]}" install -c "$astra_root/requirements-controller.txt" scipy timm 'ftfy==6.1.1' regex iopath typing_extensions \
+"${astra_pip[@]}" install -c "$astra_root/requirements-controller.txt" -c "$astra_root/provenance/vision_resolved.lock.txt" scipy timm 'ftfy==6.1.1' regex iopath typing_extensions \
   huggingface_hub einops omegaconf safetensors imageio trimesh evo e3nn plyfile \
   'moviepy==1.0.3' pillow_heif pycolmap addict pycocotools psutil
 astra_vendor="$astra_root/artifacts/foundation_vision/vendor"

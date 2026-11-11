@@ -59,4 +59,4 @@ PY_CHECK_ENCODER
   "$package_root/.venv-sim/bin/python" -m pip install --no-deps --force-reinstall "$package_root/third_party/wheels/pillow-12.3.0-cp310-cp310-linux_x86_64.whl"
   "$package_root/.venv-sim/bin/python" -c 'from PIL import features; assert features.version("zlib") == "2.3.3", "Unexpected PNG encoder"'
 fi
-printf '%s\n' "Setup complete. Run ./run.sh inspect --task t04 with the local environments."
+printf '%s\n' "Setup complete. Run ./run.sh inspect --task libero_10_t4 with the local environments."

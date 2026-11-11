@@ -27,8 +27,9 @@ Optional training, UI and 3D Gaussian splatting packages are omitted. The select
 SAM and DA3 source packages are installed with `--no-deps` because their broad
 upstream metadata includes features this harness never invokes. This optional
 environment is not a byte-identical reproduction of the original environment;
-model source and checkpoint revisions are pinned, while several utility packages
-are resolved at installation time.
+model source and checkpoint revisions are pinned. Utility package versions are
+constrained to the tested resolution in `provenance/vision_resolved.lock.txt`;
+the CUDA PyTorch installation remains a separate explicit stage.
 
 ## Obtain checkpoints
 
@@ -64,6 +65,15 @@ the multiplex checkpoint, not the video tracker. Neither predicted masks nor
 depth certify physical clearance. Installation and `inspect` do not load models
 or issue inference requests.
 
-The clean core and simulator installs are validated separately. The optional
-GPU packages and checkpoint downloads have not been reinstalled or executed as
-part of this repository extraction.
+The core, simulator and optional vision environments were installed from scratch
+for this extraction. SAM's multiplex detector/processor, the builder symbols
+used by this harness, and the DA3 inference API imported successfully; see
+`provenance/vision_install_validation.json`. No model was instantiated, no
+checkpoint was downloaded, and no live model inference was run.
+
+`pip check` in `.venv-vision` reports the deliberately omitted DA3 packages
+`fastapi`, `open3d`, `pre-commit`, `typer`, `uvicorn` and `xformers`, plus its
+`opencv-python` declaration (this environment uses `opencv-python-headless`).
+The upstream package lists these extra features as mandatory metadata. The
+actual imports required by this harness pass without them. The core and
+simulator environments each pass `pip check` without missing requirements.

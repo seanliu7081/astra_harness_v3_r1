@@ -1,0 +1,27 @@
+{
+  "kind": "fresh_git_clone_installation",
+  "validated_source_commit": "eda4c9371c68420f274a843ef9ea9ac8bd309032",
+  "clone_directory": "/tmp/astra harness v3 r1 clean clone",
+  "clone_method": "git clone --no-local (independent working tree and Git objects)",
+  "commands": [
+    "./setup.sh --core-only",
+    "./setup.sh --sim-only --python-sim /venv/fm_dno/bin/python",
+    ".venv/bin/python -m pytest -q",
+    "./run.sh inspect --task t08_bottle_obstacle --vision off",
+    ".venv/bin/python scripts/verify_repository.py",
+    ".venv/bin/python -m pip check",
+    ".venv-sim/bin/python -m pip check"
+  ],
+  "python_sim_note": "Python 3.10 was installed at a custom location on the test host; the resulting virtual environment and all simulator packages live inside the clone.",
+  "tests_passed": 59,
+  "tests_failed": 0,
+  "core_pip_check": "passed",
+  "simulator_pip_check": "passed",
+  "source_imports_within_clone": true,
+  "simulator_imports_within_clone": true,
+  "vendored_libero_within_clone": true,
+  "model_calls": 0,
+  "simulator_resets": 0,
+  "ci_url": "https://github.com/seanliu7081/astra_harness_v3_r1/actions/runs/43112623062",
+  "ci_conclusion": "success"
+}

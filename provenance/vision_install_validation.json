@@ -1,0 +1,32 @@
+{
+  "kind": "fresh_optional_vision_install_import_check",
+  "python": "3.12.14 | packaged by conda-forge | (main, Aug 21 2026, 22:48:28) [GCC 14.4.0]",
+  "model_instances_created": 0,
+  "checkpoints_downloaded": false,
+  "model_calls": 0,
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0",
+    "scipy": "1.17.1",
+    "opencv-python-headless": "4.10.0.84",
+    "sam3": "0.1.0",
+    "depth-anything-3": "0.0.0"
+  },
+  "imported": [
+    "sam3.model_builder",
+    "Sam3MultiplexDetector",
+    "SAM3VLBackboneTri",
+    "Sam3Processor",
+    "DepthAnything3",
+    "Sam31Segmenter",
+    "DA3DepthEstimator"
+  ],
+  "builder_symbols": true,
+  "pip_check": {
+    "returncode": 1,
+    "report": "depth-anything-3 0.0.0 requires fastapi, which is not installed.\ndepth-anything-3 0.0.0 requires open3d, which is not installed.\ndepth-anything-3 0.0.0 requires opencv-python, which is not installed.\ndepth-anything-3 0.0.0 requires pre-commit, which is not installed.\ndepth-anything-3 0.0.0 requires typer, which is not installed.\ndepth-anything-3 0.0.0 requires typer, which is not installed.\ndepth-anything-3 0.0.0 requires uvicorn, which is not installed.\ndepth-anything-3 0.0.0 requires xformers, which is not installed.\n",
+    "explanation": "DA3 upstream declares UI/training/3DGS optional-in-practice dependencies as mandatory. Minimal inference setup intentionally omits them, uses opencv-python-headless; verified actual harness inference imports."
+  }
+}
