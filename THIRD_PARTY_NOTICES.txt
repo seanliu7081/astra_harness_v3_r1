@@ -1,0 +1,83 @@
+LIBERO
+======
+The third_party/LIBERO directory contains an exact, unmodified subset of the
+LIBERO checkout used by the frozen simulator baseline also used by astra_tools_r1. The upstream project is
+https://github.com/Lifelong-Robot-Learning/LIBERO and its MIT license is retained
+at third_party/LIBERO/LICENSE. Its original README and package metadata are also
+retained. The 100 Python files reproduce the baseline source-tree SHA256:
+ddd318ab2a023ea09d68bdd7c581d22a064d7204471fb26a736c6f91ed9d014d.
+
+The baseline checkout did not retain Git metadata, so no upstream commit is
+claimed. provenance/libero_manifest.json pins every included file by SHA256.
+Included data covers the 10 LIBERO-10 tasks, the 10 LIBERO-Goal tasks, and the
+original bowl-to-plate task (LIBERO-Spatial task 0), with all 50 original initial
+states per supported task. Required object meshes, textures, XML definitions,
+and four arena backgrounds are copied byte-for-byte. Original asset-family
+names (stable_scanned_objects, stable_hope_objects, turbosquid_objects) are kept
+for attribution. The manifest records the recursive XML dependency selection.
+The original README distinguishes the codebase's MIT license from datasets'
+Creative Commons Attribution 4.0 International (CC BY 4.0) license:
+https://creativecommons.org/licenses/by/4.0/legalcode
+LIBERO attribution: Bo Liu, Yifeng Zhu, Chongkai Gao, Yihao Feng, Qiang Liu,
+Yuke Zhu, and Peter Stone, "LIBERO: Benchmarking Knowledge Transfer for Lifelong
+Robot Learning" (2023), https://arxiv.org/abs/2306.03310. The original README's
+citation and license table are retained. Official initial-state data is copied
+without modification; the custom task scene/initial layouts are experiment
+variants, with the original official BDDL included for comparison. No
+demonstrations or training trajectories are bundled or used by the controller.
+
+Runtime dependencies
+====================
+Robosuite, MuJoCo, NumPy, Pillow, PyTorch and other runtime dependencies are
+installed into ignored local virtual environments by setup.sh. Except for the
+frozen Pillow encoder described below, they are not vendored into the source
+repository. Their own package licenses and notices are installed with their
+distributions. requirements-simulator.txt pins the
+physics/controller versions used by the original experiment. The independently
+installed robosuite 1.4.1 baseline matched all 1,019 checked distribution RECORD
+hashes; no unrecorded robosuite source patch was observed.
+
+The portable setup uses PyTorch 2.10.0 CPU wheels rather than the original
+Conda CUDA build. PyTorch is used for loading trusted initial-state files and
+seeding, not learned-policy inference or robot control. This is a declared
+packaging difference; source identity and simulator replay checks are recorded
+separately and are not replaced by a claim of byte-identical environments.
+
+Custom task scenes
+==================
+The tasks/ directory includes evaluator-side scene and initial-state inputs
+for the r1 framework. These derive from the same LIBERO assets above; task
+manifests record exact input hashes. No demonstrations or learned weights are
+included. Historical file paths in provenance describe source identity only;
+launchers resolve all active assets within this repository.
+
+Optional visual models
+======================
+SAM 3.1 source and Depth Anything 3 source are downloaded only by the optional
+scripts/setup_vision.sh command. Model checkpoints are downloaded only with
+its explicit --download-models option, and remain ignored local artifacts.
+Source commits and checkpoint revisions are pinned in that script. Their
+original upstream licenses apply; model access may require Hugging Face
+account approval and acceptance of the model's own terms. Neither source nor
+weights are redistributed by this repository.
+
+Frozen PNG encoder
+==================
+third_party/wheels/pillow-12.3.0-cp310-cp310-linux_x86_64.whl preserves the original
+Conda-forge Pillow 12.3.0 build and zlib-ng 2.3.3 encoder. The stock PyPI Pillow
+12.3.0 wheel generates different compressed PNG bytes for identical RGB pixels,
+which changes the frozen observation hash. setup.sh installs this local wheel
+last, checks its SHA256, and verifies the encoder version. Its scope is CPython
+3.10 on Linux x86_64; no manylinux compatibility claim is made.
+
+The Pillow Python source and native modules are the original installed build.
+Only ELF RPATH entries are relocated: Pillow modules use $ORIGIN/.libs and their
+21 bundled native dependencies use $ORIGIN. No original environment path is
+needed at runtime. System glibc, loader, and ordinary Linux runtime libraries
+remain prerequisites. provenance/encoder_wheel_manifest.json records the wheel
+checksum, source-package URLs and checksums, original and relocated native-file
+checksums, and license names. All original Pillow license files and native
+package license bundles are included under the wheel's dist-info/licenses.
+GCC runtime libraries include GPLv3 and the GCC Runtime Library Exception.
+This redistributable binary preserves the encoder build, not byte identity of
+the original entire Python environment.

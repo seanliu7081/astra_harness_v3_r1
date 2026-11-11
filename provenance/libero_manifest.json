@@ -1,0 +1,1223 @@
+{
+  "kind": "exact_vendor_snapshot_with_task_asset_closure",
+  "created_at_utc": "2026-11-05T03:48:57.213875+00:00",
+  "upstream": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+  "license": "Codebase: MIT (original LICENSE retained); datasets: CC BY 4.0 per original README license table; attribution and link in THIRD_PARTY_NOTICES.txt",
+  "git_commit": null,
+  "git_commit_note": "Baseline checkout had no .git metadata. Pin is the byte-level source/asset manifest, not an inferred upstream commit.",
+  "python_files": 100,
+  "python_tree_sha256": "ddd318ab2a023ea09d68bdd7c581d22a064d7204471fb26a736c6f91ed9d014d",
+  "supported_data": "libero_10 tasks0-9,libero_goal tasks0-9,libero_spatial task0; all50official initial states for each",
+  "asset_selection": {
+    "root_xmls": [
+      "libero/libero/assets/stable_scanned_objects/basket/basket.xml",
+      "libero/libero/assets/articulated_objects/white_cabinet.xml",
+      "libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml",
+      "libero/libero/assets/stable_hope_objects/milk/milk.xml",
+      "libero/libero/assets/stable_hope_objects/chocolate_pudding/chocolate_pudding.xml",
+      "libero/libero/assets/stable_scanned_objects/glazed_rim_porcelain_ramekin/glazed_rim_porcelain_ramekin.xml",
+      "libero/libero/assets/stable_hope_objects/ketchup/ketchup.xml",
+      "libero/libero/assets/stable_scanned_objects/plate/plate.xml",
+      "libero/libero/assets/stable_scanned_objects/chefmate_8_frypan/chefmate_8_frypan.xml",
+      "libero/libero/assets/turbosquid_objects/desk_caddy/desk_caddy.xml",
+      "libero/libero/assets/turbosquid_objects/porcelain_mug/porcelain_mug.xml",
+      "libero/libero/assets/stable_hope_objects/tomato_sauce/tomato_sauce.xml",
+      "libero/libero/assets/stable_hope_objects/cream_cheese/cream_cheese.xml",
+      "libero/libero/assets/stable_hope_objects/butter/butter.xml",
+      "libero/libero/assets/turbosquid_objects/wine_rack/wine_rack.xml",
+      "libero/libero/assets/articulated_objects/wooden_cabinet.xml",
+      "libero/libero/assets/articulated_objects/microwave.xml",
+      "libero/libero/assets/stable_hope_objects/orange_juice/orange_juice.xml",
+      "libero/libero/assets/turbosquid_objects/red_coffee_mug/red_coffee_mug.xml",
+      "libero/libero/assets/turbosquid_objects/wine_bottle/wine_bottle.xml",
+      "libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml",
+      "libero/libero/assets/turbosquid_objects/black_book/black_book.xml",
+      "libero/libero/assets/articulated_objects/flat_stove.xml",
+      "libero/libero/assets/stable_hope_objects/cookies/cookies.xml",
+      "libero/libero/assets/turbosquid_objects/moka_pot/moka_pot.xml",
+      "libero/libero/assets/turbosquid_objects/white_yellow_mug/white_yellow_mug.xml",
+      "libero/libero/assets/scenes/libero_tabletop_base_style.xml",
+      "libero/libero/assets/scenes/libero_living_room_tabletop_base_style.xml",
+      "libero/libero/assets/scenes/libero_kitchen_tabletop_base_style.xml",
+      "libero/libero/assets/scenes/libero_study_base_style.xml"
+    ],
+    "asset_files": 147,
+    "method": "Referenced XML files and recursive file attributes; fixed scene floor/wall substitutions included. Meshes/textures are unmodified."
+  },
+  "file_count": 293,
+  "total_bytes": 200902579,
+  "files": {
+    "LICENSE": {
+      "sha256": "e2885fd30a08381b799c4a33385522b23d637b4051b8f9a7f9f2519944b68ff6",
+      "bytes": 1080
+    },
+    "README.md": {
+      "sha256": "e87d5b284da3d7c127e1bc8282ea80b5da02aad3e9272c13adc96c4eca0eaa41",
+      "bytes": 8128
+    },
+    "benchmark_scripts/check_task_suites.py": {
+      "sha256": "e07c8b3a52e0e025a311357dee34afcf630a944c00abc0c7a6642f2d1ab29f90",
+      "bytes": 4156
+    },
+    "benchmark_scripts/download_libero_datasets.py": {
+      "sha256": "7d1ed9ca616d9cb3182bd4c79fbb093aec153c4824b440e4ccaf530b0b8234d0",
+      "bytes": 1811
+    },
+    "benchmark_scripts/init_path.py": {
+      "sha256": "aea5f762b0c3676d50e545d9ed0b6f8bdb01d16c25f8d992034db704668656ca",
+      "bytes": 199
+    },
+    "benchmark_scripts/render_single_task.py": {
+      "sha256": "f5ed8575eb40f522f0bf97b7097fb27ff7707f51ffa11393ec73fd2c5a81812a",
+      "bytes": 2342
+    },
+    "benchmark_scripts/shasum_files.py": {
+      "sha256": "77700eea9f12b260055f18c2e31fc31688bb55f729d8430c3d57f0917b4b9ba0",
+      "bytes": 1280
+    },
+    "libero/__init__.py": {
+      "sha256": "989a05c2679400d550900add29b6950cb0b2c45cf319023f77a4635d3fbec80a",
+      "bytes": 181
+    },
+    "libero/configs/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "libero/libero/__init__.py": {
+      "sha256": "0f3263e04e58acef0a2184a8b73639292fe9ded83e87ff5d786606ca75bcfb94",
+      "bytes": 3717
+    },
+    "libero/libero/assets/articulated_objects/flat_stove/button_dark_texture.png": {
+      "sha256": "c4c9f069e1e5f976879466de9c2e158ed338f3d1fbf2a37c837abe8d432783a1",
+      "bytes": 156406
+    },
+    "libero/libero/assets/articulated_objects/flat_stove/metal.png": {
+      "sha256": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+      "bytes": 196878
+    },
+    "libero/libero/assets/articulated_objects/flat_stove/stove_burner/burnerplate.stl": {
+      "sha256": "93526fc3f2585e828c115f0f20d5ff43129ce7dc46c9fcc8216c4015c717bd00",
+      "bytes": 35284
+    },
+    "libero/libero/assets/articulated_objects/flat_stove/stove_knob_base/visual/stove_knob_base_vis.msh": {
+      "sha256": "d65ed847f007e5f3e1a01edb45c63ccb9f881f92479ec516028fb654f4077ddc",
+      "bytes": 13408
+    },
+    "libero/libero/assets/articulated_objects/flat_stove/stove_knob_button/visual/stove_knob_button_vis.msh": {
+      "sha256": "b7cff7b5899505d5abcfed347a86fe7ef837203560838b9d9453196a91f8a743",
+      "bytes": 34792
+    },
+    "libero/libero/assets/articulated_objects/flat_stove.xml": {
+      "sha256": "046748f5543cdfc1500d74f8ca60a992ad6633717396a2d4f505eb79aa102cb1",
+      "bytes": 7180
+    },
+    "libero/libero/assets/articulated_objects/meshes/microwave/micro.stl": {
+      "sha256": "0825383a47b711561328d1db63ee9aa15c2c182f362298c315ee2cb2cd0fba1d",
+      "bytes": 14484
+    },
+    "libero/libero/assets/articulated_objects/meshes/microwave/microbutton.stl": {
+      "sha256": "d932505444c465f2a73aebbb4f2bf220f4b0978ebafd1e49f2e1c0a23f9f27b7",
+      "bytes": 5484
+    },
+    "libero/libero/assets/articulated_objects/meshes/microwave/microdoor.stl": {
+      "sha256": "e65499c915972f081c969636022ffe8a31a884ea9f0fa8aa9252993644575976",
+      "bytes": 6484
+    },
+    "libero/libero/assets/articulated_objects/meshes/microwave/microfeet.stl": {
+      "sha256": "07dc873d4e1f9a2fc5dc6e376729e5b4f5b8ed11a54e10d0bc7a22c6c7bd6bec",
+      "bytes": 7284
+    },
+    "libero/libero/assets/articulated_objects/meshes/microwave/microhandle.stl": {
+      "sha256": "b0610f828666b21e38d63c78b1e561ad28bb0914633f8af46a1dc64396b9aeab",
+      "bytes": 8284
+    },
+    "libero/libero/assets/articulated_objects/meshes/microwave/microwindow.stl": {
+      "sha256": "9f9638d4dbded50ee3ee25e6b77aa8f8abda3b17ce801528fb5c8e85d1adc7ae",
+      "bytes": 684
+    },
+    "libero/libero/assets/articulated_objects/microwave.xml": {
+      "sha256": "d06c1e44acb830c529a843e566deedfc5693a6e11f68a3d1d59d49021890fbdf",
+      "bytes": 4442
+    },
+    "libero/libero/assets/articulated_objects/textures/metal1.png": {
+      "sha256": "0d25fa8affbb0f579220f0cdad6ee74f875495822ee79bb5afd23d73671f6363",
+      "bytes": 289552
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/metal.png": {
+      "sha256": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+      "bytes": 196878
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/white_cabinet_base/visual/white_cabinet_base_vis.msh": {
+      "sha256": "8bcf371361562de9ac8ac2fe06db6b6b695dde3cbe50e86de5a6e272d21e1f9c",
+      "bytes": 21400
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/white_cabinet_bottom/visual/white_cabinet_bottom_vis.msh": {
+      "sha256": "23181bdeb6ce44e3634318e6c946fa00f568eb25256b8546558775eda691700c",
+      "bytes": 9088
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/white_cabinet_bottom_handle/visual/white_cabinet_bottom_handle_vis.msh": {
+      "sha256": "a61587cbcebb8a8ad5dc0d8c60e6db4747a5a118397485a0a5eb5e171c2d397e",
+      "bytes": 40192
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/white_cabinet_middle/visual/white_cabinet_middle_vis.msh": {
+      "sha256": "580eead06792affbd91c1b5c17e3d1c94082fcb247eb4812d1a8ac4c120253c5",
+      "bytes": 9088
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/white_cabinet_middle_handle/visual/white_cabinet_middle_handle_vis.msh": {
+      "sha256": "1688f375dde79450d9e5cfcb5dc17a16c27018c9dbf74513577588d54e62e0a8",
+      "bytes": 40192
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/white_cabinet_top/visual/white_cabinet_top_vis.msh": {
+      "sha256": "2b7c08ad3740ad45965eaedd9cf07f64ea12dd4044cac7e71fa5b601b4cbb481",
+      "bytes": 9088
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/white_cabinet_top_handle/visual/white_cabinet_top_handle_vis.msh": {
+      "sha256": "58924271007a30a14eda7111e7eefd7be3f8b04a1d31bbf4964d7da419282df6",
+      "bytes": 40192
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet/white_wood.png": {
+      "sha256": "43524d6bca8df5042d5b45d0b0e458f34ea7f2d6445d026c5b204ee32acd8bea",
+      "bytes": 2209978
+    },
+    "libero/libero/assets/articulated_objects/white_cabinet.xml": {
+      "sha256": "b8ebf670ad0d5533d9fedbfdd7909d263792fc6725d4ca5d4df987660cee264a",
+      "bytes": 14365
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/dark_fine_wood.png": {
+      "sha256": "9aaa94ef4cd61592b566569bba3569276a38ea5ff22ed4b978b77b038b38a11f",
+      "bytes": 42358
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/metal.png": {
+      "sha256": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+      "bytes": 196878
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/wooden_cabinet_base/visual/wooden_cabinet_base_vis.msh": {
+      "sha256": "8bcf371361562de9ac8ac2fe06db6b6b695dde3cbe50e86de5a6e272d21e1f9c",
+      "bytes": 21400
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/wooden_cabinet_bottom/visual/wooden_cabinet_bottom_vis.msh": {
+      "sha256": "23181bdeb6ce44e3634318e6c946fa00f568eb25256b8546558775eda691700c",
+      "bytes": 9088
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/wooden_cabinet_bottom_handle/visual/wooden_cabinet_bottom_handle_vis.msh": {
+      "sha256": "a61587cbcebb8a8ad5dc0d8c60e6db4747a5a118397485a0a5eb5e171c2d397e",
+      "bytes": 40192
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/wooden_cabinet_middle/visual/wooden_cabinet_middle_vis.msh": {
+      "sha256": "580eead06792affbd91c1b5c17e3d1c94082fcb247eb4812d1a8ac4c120253c5",
+      "bytes": 9088
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/wooden_cabinet_middle_handle/visual/wooden_cabinet_middle_handle_vis.msh": {
+      "sha256": "1688f375dde79450d9e5cfcb5dc17a16c27018c9dbf74513577588d54e62e0a8",
+      "bytes": 40192
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/wooden_cabinet_top/visual/wooden_cabinet_top_vis.msh": {
+      "sha256": "2b7c08ad3740ad45965eaedd9cf07f64ea12dd4044cac7e71fa5b601b4cbb481",
+      "bytes": 9088
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet/wooden_cabinet_top_handle/visual/wooden_cabinet_top_handle_vis.msh": {
+      "sha256": "58924271007a30a14eda7111e7eefd7be3f8b04a1d31bbf4964d7da419282df6",
+      "bytes": 40192
+    },
+    "libero/libero/assets/articulated_objects/wooden_cabinet.xml": {
+      "sha256": "eca251258c7ff6a05fa181a316c767508801812f4ea870921f3ce28fd82ea7af",
+      "bytes": 14435
+    },
+    "libero/libero/assets/scenes/black_book/black_book_texture.png": {
+      "sha256": "b743b0e878a10e579371707f3d135c6e7a80a8c307fffabfe1fea6a784830ec2",
+      "bytes": 186624
+    },
+    "libero/libero/assets/scenes/black_book/visual/black_book_vis.msh": {
+      "sha256": "ca4a7f95bad5dee37a99c0374df132eadf5f8304770e5830f3286d730c844049",
+      "bytes": 773296
+    },
+    "libero/libero/assets/scenes/desk/desk_texture.png": {
+      "sha256": "f1f228aca1dab2c88833d00d10983d3df62e64569bb61ad66865490cbd08a5c3",
+      "bytes": 489350
+    },
+    "libero/libero/assets/scenes/desk/visual/desk_vis.msh": {
+      "sha256": "b883c91335372a5f7be2af0b83b95d2db429a5010110c8ca9739aef03d15f8f3",
+      "bytes": 742624
+    },
+    "libero/libero/assets/scenes/floor_lamp/lamp_texture.png": {
+      "sha256": "a9735321ebc866113449bc4debb0c078752389d2b50541313ae7788f0fcde80d",
+      "bytes": 24160
+    },
+    "libero/libero/assets/scenes/floor_lamp/visual/floor_lamp_vis.msh": {
+      "sha256": "6de4776381809fdc2f7a6eae997a8269fb40fe09ef977e05a3e4fa1949a4e949",
+      "bytes": 7983160
+    },
+    "libero/libero/assets/scenes/fridge/metal.png": {
+      "sha256": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+      "bytes": 196878
+    },
+    "libero/libero/assets/scenes/fridge/visual/fridge_vis.msh": {
+      "sha256": "41edbedd182c3c27ffe8bc2c2808f61bc575c80bc37d717a17af71d10a04a208",
+      "bytes": 1395808
+    },
+    "libero/libero/assets/scenes/kitchen_background/kitchen_background.png": {
+      "sha256": "cb9379766b531eb8e6f44a1fa3df92430e0c73c6c3856a88521510e689bca15a",
+      "bytes": 172490
+    },
+    "libero/libero/assets/scenes/kitchen_background/visual/kitchen_background_vis.msh": {
+      "sha256": "6b2487166e07650ba787129919fb3c4f77bfd912fdd4e265f5bf68992175417a",
+      "bytes": 7534528
+    },
+    "libero/libero/assets/scenes/kitchen_background_hot_pot/visual/kitchen_background_hot_pot_vis.msh": {
+      "sha256": "05c173fb9ae96f7ed2fdccbeb14abb38e8db601f7802e9b78db04d9a5e2b0ce2",
+      "bytes": 845440
+    },
+    "libero/libero/assets/scenes/kitchen_background_pot/kitchen_background_pot.png": {
+      "sha256": "d953b50c28c2e7c42e5a31bee757984ea398ce464917edb4d02cb188dfc9b44f",
+      "bytes": 19103
+    },
+    "libero/libero/assets/scenes/kitchen_background_pot/visual/kitchen_background_pot_vis.msh": {
+      "sha256": "f3348ee8738bcaf84b6f9df6cae65d764bbc159410aea32d5d40c09dc58b69ec",
+      "bytes": 4344316
+    },
+    "libero/libero/assets/scenes/kitchen_background_stove/kitchen_background_stove.png": {
+      "sha256": "05be4ff65b6f9f4e89332b97628e9b9f1a176562afca6e14f5d325bd41f36e72",
+      "bytes": 38611
+    },
+    "libero/libero/assets/scenes/kitchen_background_stove/visual/kitchen_background_stove_vis.msh": {
+      "sha256": "0efe7517df5bb76730dd0b951dcf40644e7c494005a89421229b422217998702",
+      "bytes": 6212608
+    },
+    "libero/libero/assets/scenes/libero_kitchen_tabletop_base_style.xml": {
+      "sha256": "f867e7cb59e8ef27aea10edb7c341eca5d3230da8c354aff2a072cc557fd2977",
+      "bytes": 7214
+    },
+    "libero/libero/assets/scenes/libero_living_room_tabletop_base_style.xml": {
+      "sha256": "e22de70abac444dc7602546c46931580a3f06753ce941d0921f4f145e8eec70c",
+      "bytes": 6745
+    },
+    "libero/libero/assets/scenes/libero_study_base_style.xml": {
+      "sha256": "dbc88d0ada642f99762ddd25b778981721fd1c010ad9c0cd114dade7c5b8f909",
+      "bytes": 9420
+    },
+    "libero/libero/assets/scenes/libero_tabletop_base_style.xml": {
+      "sha256": "bb118118e3e02a0f23295c072d77c5a7c6b44cc773032dc79c17070b4e133f86",
+      "bytes": 4857
+    },
+    "libero/libero/assets/scenes/living_room/living_room_wall_unit.png": {
+      "sha256": "7e6f264015ca84d29a2850a7854517d0017ed53902ae3d851ae76441f5644730",
+      "bytes": 65012
+    },
+    "libero/libero/assets/scenes/living_room/visual/living_room_vis.msh": {
+      "sha256": "326c50b18dfce7d338473ab8d99edce64c752cfef0203495faa2471dcafd4f8b",
+      "bytes": 6514576
+    },
+    "libero/libero/assets/scenes/living_room_table/living_room_table_texture.png": {
+      "sha256": "38f401fdbbdeae06bf4c674f2488ab4bda8b89519a1d58976c7265b1f7c8c1e7",
+      "bytes": 1331834
+    },
+    "libero/libero/assets/scenes/living_room_table/visual/living_room_table_vis.msh": {
+      "sha256": "9877f90c22971b98840ca6f8611fec6e0a8bec85f0e5f0a78e9e08bb57a8e2ec",
+      "bytes": 1699504
+    },
+    "libero/libero/assets/scenes/office_book_shelf/ceramic.png": {
+      "sha256": "beef464a2aa9143ba6a25a44adcbfd1f1aff16c5969edbf08019b61025388402",
+      "bytes": 1442030
+    },
+    "libero/libero/assets/scenes/office_book_shelf/visual/office_book_shelf_vis.msh": {
+      "sha256": "6386615fc43e41bd8df6544cdf95acf18fc0becf6e36266bfb5c66b7410472a5",
+      "bytes": 45160
+    },
+    "libero/libero/assets/scenes/plant/plant_texture.png": {
+      "sha256": "216886be0ecd4a765b5f00fe664dd27f25d7af19caef1c2012c4cca429d66349",
+      "bytes": 1583401
+    },
+    "libero/libero/assets/scenes/plant/visual/plant_vis.msh": {
+      "sha256": "648fed3592f88784f1dfde93387ca744b1b428ffed5d6a3a7317108b3cae45c5",
+      "bytes": 732472
+    },
+    "libero/libero/assets/scenes/study_wall_painting/study_wall_painting.png": {
+      "sha256": "fa1bf8b6658d03b9b20ff6ea0276fed8b68d50894579d43caca2a94fd246063a",
+      "bytes": 432815
+    },
+    "libero/libero/assets/scenes/study_wall_painting/visual/study_wall_painting_vis.msh": {
+      "sha256": "ba42ab1796e320228178614b43b837531620c91503ba12b3b4b59f062e431821",
+      "bytes": 98080
+    },
+    "libero/libero/assets/scenes/wall_decoration/visual/wall_decoration_vis.msh": {
+      "sha256": "30c873f6e13e19a721672219d0b964a3de9ddacc6b44906888c9bf366254e1bb",
+      "bytes": 1312
+    },
+    "libero/libero/assets/scenes/wall_decoration/wall_decoration_texture.png": {
+      "sha256": "b30b2b6f7499d05a4c502e3699027e14e9646023f4035b14b56f1fb55703bc3e",
+      "bytes": 4492846
+    },
+    "libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": {
+      "sha256": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3",
+      "bytes": 5812
+    },
+    "libero/libero/assets/stable_hope_objects/alphabet_soup/texture_map.png": {
+      "sha256": "cd47556b3b2916ae138e8fd370d4f5192a2fe100369eec254c3c173409f48674",
+      "bytes": 1138366
+    },
+    "libero/libero/assets/stable_hope_objects/alphabet_soup/visual/textured_vis.msh": {
+      "sha256": "a9f36a95f4ad97cb141f134251114d46cc4f3950229d76ac815e751cc0cf121e",
+      "bytes": 1496788
+    },
+    "libero/libero/assets/stable_hope_objects/butter/butter.xml": {
+      "sha256": "2d0d3ffd627243007e8bd8106140f9b5abbf6115a30a59c21405e8c26ffb8aa9",
+      "bytes": 1053
+    },
+    "libero/libero/assets/stable_hope_objects/butter/texture_map.png": {
+      "sha256": "e344d473644d71b919484f6b93d52707ea4821fe05c14514d7cd6cc24f2486c2",
+      "bytes": 3158511
+    },
+    "libero/libero/assets/stable_hope_objects/butter/visual/butter_vis.msh": {
+      "sha256": "88b3916e53c813c7e06c856d7e0563e636c07247d95982c2cd05abc0ebd0cc68",
+      "bytes": 1554676
+    },
+    "libero/libero/assets/stable_hope_objects/chocolate_pudding/chocolate_pudding.xml": {
+      "sha256": "f2ec3318aeed8feb6b16d234149ce52127050e81c65f7d43aaa6384cdd26ecf2",
+      "bytes": 1065
+    },
+    "libero/libero/assets/stable_hope_objects/chocolate_pudding/texture_map.png": {
+      "sha256": "4d2db3872437523fd5fc5611728c154d475d05642c0d2a64ce60065e3c6ffc48",
+      "bytes": 3334239
+    },
+    "libero/libero/assets/stable_hope_objects/chocolate_pudding/visual/textured_vis.msh": {
+      "sha256": "34c7f14b29daa9f99daafe962866e0b4ea59d38863d04e3da1d4a7ed4e6244fd",
+      "bytes": 1949848
+    },
+    "libero/libero/assets/stable_hope_objects/cookies/cookies.xml": {
+      "sha256": "f79f4e6274a286b10ea8f8799690c56c7ddbb2ca2c63703c06c92febb966bf70",
+      "bytes": 1063
+    },
+    "libero/libero/assets/stable_hope_objects/cookies/texture_map.png": {
+      "sha256": "e1c4be04c8a9d60ba33ef100354c451a4b02f1bdc2fc7607708b2ff4ff82d783",
+      "bytes": 3248302
+    },
+    "libero/libero/assets/stable_hope_objects/cookies/visual/cookies_vis.msh": {
+      "sha256": "bd2f87872eb6ac780525ec5bd710d690d520f7d6725b10625f8ee403115308df",
+      "bytes": 1928248
+    },
+    "libero/libero/assets/stable_hope_objects/cream_cheese/cream_cheese.xml": {
+      "sha256": "a1bbeb0321d9d20d723aca62baa54f6012bf74c0af5d4f767a58ca0cdde50d95",
+      "bytes": 1550
+    },
+    "libero/libero/assets/stable_hope_objects/cream_cheese/texture_map.png": {
+      "sha256": "6ef390c92c83f6f27da79df09130e48bda6785f98181942d2ec2548ab2afa814",
+      "bytes": 3071899
+    },
+    "libero/libero/assets/stable_hope_objects/cream_cheese/visual/cream_cheese_vis.msh": {
+      "sha256": "0110fcd0351384174e70956ae83c4b30a677bc5673aa8107213b73334efbdf3b",
+      "bytes": 1753612
+    },
+    "libero/libero/assets/stable_hope_objects/ketchup/ketchup.xml": {
+      "sha256": "9007c9658863067a55dcea588d2000c9779e9edb1ba9d816312a840cb190064b",
+      "bytes": 3656
+    },
+    "libero/libero/assets/stable_hope_objects/ketchup/texture_map.png": {
+      "sha256": "01edda2f924589b0a23aac084c1270a4a39afde79131a1bec73f7a23ad592bfe",
+      "bytes": 1898296
+    },
+    "libero/libero/assets/stable_hope_objects/ketchup/visual/textured_vis.msh": {
+      "sha256": "52a6903d11261ef819b707241f058de28dced28746f9bbb142649a18f1d48321",
+      "bytes": 1677796
+    },
+    "libero/libero/assets/stable_hope_objects/milk/milk.xml": {
+      "sha256": "41febcc4121fae47a42f2e667a6b18f722b3feb863241b4533613672c36ad160",
+      "bytes": 1778
+    },
+    "libero/libero/assets/stable_hope_objects/milk/texture_map.png": {
+      "sha256": "0e6130ec7a6a611a2574bba4f3d77bfaecd8ff6ed0fd449e34fe8479f4585ec3",
+      "bytes": 3384036
+    },
+    "libero/libero/assets/stable_hope_objects/milk/visual/textured_vis.msh": {
+      "sha256": "540a0eedb3d483e96dda195f06ce531f9991c9f07fece482f569131ab69a8036",
+      "bytes": 1578328
+    },
+    "libero/libero/assets/stable_hope_objects/orange_juice/orange_juice.xml": {
+      "sha256": "c0c9ac0596d8978fe3aceec05dde0fab3e9f5eda4fedbda6ceb5d5276806618e",
+      "bytes": 1786
+    },
+    "libero/libero/assets/stable_hope_objects/orange_juice/texture_map.png": {
+      "sha256": "2488e5d72c7848db195be1d5a08d45a00b04122fff7ddcc107014d177d6d08c9",
+      "bytes": 3637784
+    },
+    "libero/libero/assets/stable_hope_objects/orange_juice/visual/textured_vis.msh": {
+      "sha256": "9ebfebfe88f469abd9015bea348f242ee36a93829f75975535dcb44a5c3d876d",
+      "bytes": 2152672
+    },
+    "libero/libero/assets/stable_hope_objects/tomato_sauce/texture_map.png": {
+      "sha256": "9372cff38688004b69e7a1fc60ffa2576d6cf31a884de279d0d67bdd4a35c631",
+      "bytes": 2451651
+    },
+    "libero/libero/assets/stable_hope_objects/tomato_sauce/tomato_sauce.xml": {
+      "sha256": "b13d88bc065d04481150832581812bd0cbc9e4c0efcabccda2dc8d58654ee32b",
+      "bytes": 6520
+    },
+    "libero/libero/assets/stable_hope_objects/tomato_sauce/visual/textured_vis.msh": {
+      "sha256": "eeb9ee401b204db5ca5b98cf8d52274695b5562ee31f0affaca58a25a07cc2e4",
+      "bytes": 3087520
+    },
+    "libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": {
+      "sha256": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda",
+      "bytes": 10343
+    },
+    "libero/libero/assets/stable_scanned_objects/akita_black_bowl/texture.png": {
+      "sha256": "8a646d98b084b7400dd91beed9c83e10b4a4dca572896b3974356b7937a4bd85",
+      "bytes": 12751242
+    },
+    "libero/libero/assets/stable_scanned_objects/akita_black_bowl/visual/akita_black_bowl_vis.msh": {
+      "sha256": "6474d536a740e995c3a2eaeb74c61e14da94131b0b222c250b61b30b13d11229",
+      "bytes": 4592392
+    },
+    "libero/libero/assets/stable_scanned_objects/basket/basket.xml": {
+      "sha256": "9c1a8263944d17f5265de9cb5aec3cee934979dee19361d21f15e2128f22d253",
+      "bytes": 2167
+    },
+    "libero/libero/assets/stable_scanned_objects/basket/texture.png": {
+      "sha256": "89c2107a39ce27d7dffc383153153e021958408cd6fffd8bf8f318a0bb2c302b",
+      "bytes": 11112400
+    },
+    "libero/libero/assets/stable_scanned_objects/basket/visual/basket_vis.msh": {
+      "sha256": "51ca04e71fbca8a4fdd5fa86362867d414e401923e1cb9b0daed488513b46734",
+      "bytes": 7170136
+    },
+    "libero/libero/assets/stable_scanned_objects/chefmate_8_frypan/chefmate_8_frypan.xml": {
+      "sha256": "8ba227a630dfb2f25f4b4285659460f5eddb59d8b7c90013a0c5ea0812da2376",
+      "bytes": 6791
+    },
+    "libero/libero/assets/stable_scanned_objects/chefmate_8_frypan/texture.png": {
+      "sha256": "7b6adc65fc2f18030a1aa0c3dde2c1719e7b74431e0e5279bea9b6416af7deb6",
+      "bytes": 752681
+    },
+    "libero/libero/assets/stable_scanned_objects/chefmate_8_frypan/visual/chefmate_8_frypan_vis.msh": {
+      "sha256": "65e0483c19250107aef692fa80a8d597ef89bcf7ea28e6e9c2a4adcfa775acd2",
+      "bytes": 1006576
+    },
+    "libero/libero/assets/stable_scanned_objects/glazed_rim_porcelain_ramekin/glazed_rim_porcelain_ramekin.xml": {
+      "sha256": "61cf1b665e52faf68a98b044da3fc2b42f2303485b6445743741fbf99d3f9bcf",
+      "bytes": 6886
+    },
+    "libero/libero/assets/stable_scanned_objects/glazed_rim_porcelain_ramekin/texture.png": {
+      "sha256": "7323b1d08b6242dd9127f853e23bb5b2651c8665dcb3c78ed00a632aef567750",
+      "bytes": 311263
+    },
+    "libero/libero/assets/stable_scanned_objects/glazed_rim_porcelain_ramekin/visual/glazed_rim_porcelain_ramekin_vis.msh": {
+      "sha256": "9ef1877c027112d27fca3e8b16e7c226fb02f52345750b8d8c8217ad0c41c5eb",
+      "bytes": 1757608
+    },
+    "libero/libero/assets/stable_scanned_objects/plate/plate.xml": {
+      "sha256": "72b4de23b2daa3169843b784998c0c3c30a6559c6c85917c6b86e3d39fa241e6",
+      "bytes": 3158
+    },
+    "libero/libero/assets/stable_scanned_objects/plate/texture.png": {
+      "sha256": "6b742142bf0e29a90d76c4b0254a4481e9eff4807eff3ac6c4ac67a5888fb005",
+      "bytes": 8660937
+    },
+    "libero/libero/assets/stable_scanned_objects/plate/visual/model_vis.msh": {
+      "sha256": "7d3278b1cefb2ed496094cad18f0c66004ee65ab933122ec8d5efdc78daa96b4",
+      "bytes": 374128
+    },
+    "libero/libero/assets/textures/gray_ceramic_tile.png": {
+      "sha256": "93a1c2b647f31aded62b4125439e17aa1a55c8f4e77820909d9a1c235f6c7315",
+      "bytes": 435890
+    },
+    "libero/libero/assets/textures/light-gray-floor-tile.png": {
+      "sha256": "a2aae4ba3b38c3ab9851eca9ad6e76cef9357ef75b3e9a4b280f694ca30acbc5",
+      "bytes": 73373
+    },
+    "libero/libero/assets/textures/light-gray-plaster.png": {
+      "sha256": "d0bdaf13b44ab6ef3122451f6b3853e40bdf20bb9be7662649683ba525dfe191",
+      "bytes": 516639
+    },
+    "libero/libero/assets/textures/martin_novak_wood_table.png": {
+      "sha256": "9d714fbf44d4d44f279761c0ddd0b2fd7271446cdbb85fcbef8677fe5f929850",
+      "bytes": 940180
+    },
+    "libero/libero/assets/textures/seamless_wood_planks_floor.png": {
+      "sha256": "c7a70ef3fad0cafc1d196e49f9ff1b483d0a5e62ed457b108a9c9b2c9ed1dd13",
+      "bytes": 3174441
+    },
+    "libero/libero/assets/textures/smooth_light_gray_plaster.png": {
+      "sha256": "d0bdaf13b44ab6ef3122451f6b3853e40bdf20bb9be7662649683ba525dfe191",
+      "bytes": 516639
+    },
+    "libero/libero/assets/textures/tile_grigia_caldera_porcelain_floor.png": {
+      "sha256": "a2aae4ba3b38c3ab9851eca9ad6e76cef9357ef75b3e9a4b280f694ca30acbc5",
+      "bytes": 73373
+    },
+    "libero/libero/assets/textures/yellow_linen_wall_texture.png": {
+      "sha256": "292d1bb3a8536b2faf73c91b9d6b11ac90c58136cbaade2af0d7b941f70904aa",
+      "bytes": 607573
+    },
+    "libero/libero/assets/turbosquid_objects/black_book/black_book.xml": {
+      "sha256": "dd50260bf3fe93abd3d4694403082b4025409ab0ee1590d8a73bd00c8a804b83",
+      "bytes": 1086
+    },
+    "libero/libero/assets/turbosquid_objects/black_book/black_book_texture.png": {
+      "sha256": "b743b0e878a10e579371707f3d135c6e7a80a8c307fffabfe1fea6a784830ec2",
+      "bytes": 186624
+    },
+    "libero/libero/assets/turbosquid_objects/black_book/visual/black_book_vis.msh": {
+      "sha256": "ca4a7f95bad5dee37a99c0374df132eadf5f8304770e5830f3286d730c844049",
+      "bytes": 773296
+    },
+    "libero/libero/assets/turbosquid_objects/desk_caddy/desk_caddy.xml": {
+      "sha256": "267de04e2191517700fced70d9f434958ba88d5e8d449e9def43aeaedd82dd85",
+      "bytes": 5572
+    },
+    "libero/libero/assets/turbosquid_objects/desk_caddy/desk_caddy_texture.png": {
+      "sha256": "ea07fb85ab5ef7167040e459ae4442827d114d778aaf4f6a8229bc3898406238",
+      "bytes": 11230178
+    },
+    "libero/libero/assets/turbosquid_objects/desk_caddy/visual/desk_caddy_vis.msh": {
+      "sha256": "c2a31df6411aa382d91553a594faa2cb9577908c3881b9022616f9d6604333a4",
+      "bytes": 2696776
+    },
+    "libero/libero/assets/turbosquid_objects/moka_pot/metal_diff.png": {
+      "sha256": "4b59ae89c09579b8edcf29df79fc17090f9d9fd1ac8275a7bd3b5cabf376ffaa",
+      "bytes": 1036822
+    },
+    "libero/libero/assets/turbosquid_objects/moka_pot/moka_pot.xml": {
+      "sha256": "b42223663280e10a755a65b395f3d6ef4f2e2ac476024a50c1e66cff9bfe5215",
+      "bytes": 4917
+    },
+    "libero/libero/assets/turbosquid_objects/moka_pot/rubber_black.png": {
+      "sha256": "8147f34af7c3e5c6b7c8496e34f848662a91d10cb55aae5bab8150eb7ff02e81",
+      "bytes": 492169
+    },
+    "libero/libero/assets/turbosquid_objects/moka_pot/visual/moka_pot_body_vis.msh": {
+      "sha256": "5b3009030d48d383572e7a3930ef0bbb55e16b59e9f2451a798c904dfdc227ca",
+      "bytes": 155212
+    },
+    "libero/libero/assets/turbosquid_objects/moka_pot/visual/moka_pot_handle_vis.msh": {
+      "sha256": "a9eb6b68faa6bb883cfa4c3d308935d4b777041a750e52ddebb048d387dc95b8",
+      "bytes": 81772
+    },
+    "libero/libero/assets/turbosquid_objects/porcelain_mug/porcelain_mug.xml": {
+      "sha256": "cd72828fc40d20ccd8d3fb08ae37fbc87cb9957309eb4e3d04244554491f753e",
+      "bytes": 6073
+    },
+    "libero/libero/assets/turbosquid_objects/porcelain_mug/porcelain_mug_texture.png": {
+      "sha256": "bab4363b4e86e3352718ef1c3849a632fa06f83528bb408f4b533ceb01b3bc25",
+      "bytes": 7293802
+    },
+    "libero/libero/assets/turbosquid_objects/porcelain_mug/visual/porcelain_mug_vis.msh": {
+      "sha256": "e0dc3f0a0585d172c6ff22e49173774e37bc8a4a8e74d8c583ecb7eb314ffc13",
+      "bytes": 1797568
+    },
+    "libero/libero/assets/turbosquid_objects/red_coffee_mug/red_coffee_mug.xml": {
+      "sha256": "53ea9985fcbcb6ead587056a801e795967ac2bd5329ceedc2aed006467dc5f80",
+      "bytes": 3485
+    },
+    "libero/libero/assets/turbosquid_objects/red_coffee_mug/red_coffee_mug_texture.png": {
+      "sha256": "056fe075297343bd294678be0f8df694a4f4e0563f42033bb167ce6b5bd0b3a9",
+      "bytes": 9780486
+    },
+    "libero/libero/assets/turbosquid_objects/red_coffee_mug/visual/red_coffee_mug_vis.msh": {
+      "sha256": "c4f694d1ea953d86ce29a085cf3613363a193a6e99446c190d88c47016d94fb6",
+      "bytes": 1212208
+    },
+    "libero/libero/assets/turbosquid_objects/white_yellow_mug/visual/white_yellow_mug_vis.msh": {
+      "sha256": "aeabcc3a57b84549568a1d6907542ef9e65ea126c101f6f3985deb8b55d3aa79",
+      "bytes": 913048
+    },
+    "libero/libero/assets/turbosquid_objects/white_yellow_mug/white_yellow_mug.xml": {
+      "sha256": "134bfdb2e605b60609b63c4bae60d833ad027902973dfb6b912768e0870b435e",
+      "bytes": 10121
+    },
+    "libero/libero/assets/turbosquid_objects/white_yellow_mug/white_yellow_mug_texture.png": {
+      "sha256": "152a4b711c33e8cb6956233043580331bd0f54d5b3dbc13a9bc870201b295890",
+      "bytes": 8119611
+    },
+    "libero/libero/assets/turbosquid_objects/wine_bottle/cork_texture.png": {
+      "sha256": "93a9c1d22c7256e423a1473b2bf9107b4e120cd249423f7e01289f9c6fd63feb",
+      "bytes": 1322298
+    },
+    "libero/libero/assets/turbosquid_objects/wine_bottle/label_wine.png": {
+      "sha256": "a8caed4b3414dcf4b72558e339ce1cad1b90b4f159d0d293f06ed04a1f473241",
+      "bytes": 158360
+    },
+    "libero/libero/assets/turbosquid_objects/wine_bottle/visual/wine_bottle_red_cork_vis.msh": {
+      "sha256": "2b993448e727c8abf8c25a5ed28699e4594dc692e3eaad76a957627f0afcc474",
+      "bytes": 96352
+    },
+    "libero/libero/assets/turbosquid_objects/wine_bottle/visual/wine_bottle_red_logo_vis.msh": {
+      "sha256": "99e4f2bec9c76a5277dc40efe774f47e9f079ced13b4197f0ac79bb36bc54e47",
+      "bytes": 3472
+    },
+    "libero/libero/assets/turbosquid_objects/wine_bottle/visual/wine_bottle_red_main_vis.msh": {
+      "sha256": "92a7a897bdac34f47161cb418fbe6f7fc9056d2f0e93647beb8139cffeed270a",
+      "bytes": 487096
+    },
+    "libero/libero/assets/turbosquid_objects/wine_bottle/wine_bottle.xml": {
+      "sha256": "9bdae6cb59f9260544cb802d4babe32c23b9dd66e0a5fb2bdb4662b468ce1a17",
+      "bytes": 6827
+    },
+    "libero/libero/assets/turbosquid_objects/wine_rack/light-wood.png": {
+      "sha256": "967be64bdb170d36283bc43c2ae5d525ec88f78bc837dc7d0efc9a28d68caad1",
+      "bytes": 801173
+    },
+    "libero/libero/assets/turbosquid_objects/wine_rack/mahogany.png": {
+      "sha256": "702a734fef1bf0df4e446f98f571628f81e423caba64b5fcfd683bae42135c3b",
+      "bytes": 66375
+    },
+    "libero/libero/assets/turbosquid_objects/wine_rack/visual/wine_rack_planes_vis.msh": {
+      "sha256": "f3daf4c20ed4b513b0d3b19d5580aa6f9c677ab6935a138f316b00852714d936",
+      "bytes": 65140
+    },
+    "libero/libero/assets/turbosquid_objects/wine_rack/visual/wine_rack_stand_vis.msh": {
+      "sha256": "6b4cf3bd2a65f93f41563e86b55b4789965001f78473268b592e59abad9c64fd",
+      "bytes": 41488
+    },
+    "libero/libero/assets/turbosquid_objects/wine_rack/visual/wine_rack_stoppers_vis.msh": {
+      "sha256": "8647657c858c45b6a55e507689888dffaf80d68d9395f9c7eb5a40eb64e17c62",
+      "bytes": 20752
+    },
+    "libero/libero/assets/turbosquid_objects/wine_rack/wine_rack.xml": {
+      "sha256": "18f97cd8bb76ed18b2f11d047c5abbe0a2d9490d53ac167e0657c596dd450c3e",
+      "bytes": 4121
+    },
+    "libero/libero/bddl_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.bddl": {
+      "sha256": "491835cc2eb6956f7ce3d1ee4e266377116168fe453e6529fe105e3b0333635d",
+      "bytes": 1485
+    },
+    "libero/libero/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl": {
+      "sha256": "5255fe54d7f25fad4dee8fa30a30033d8cb908f1708d953c91ab609264fb4fb8",
+      "bytes": 2233
+    },
+    "libero/libero/bddl_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl": {
+      "sha256": "456d145f92be049f445fc77673dc583d9d17ea7afe92f6ffcb2fd1fa5565d420",
+      "bytes": 1836
+    },
+    "libero/libero/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl": {
+      "sha256": "ae1299a707d3e810096ad648948c517de40474bcdacca93a15e17d191e34454a",
+      "bytes": 1551
+    },
+    "libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.bddl": {
+      "sha256": "e27ab37f512fe42e35771d6130f531e6a9656929e7b4c60b348b81360cf5675d",
+      "bytes": 2295
+    },
+    "libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl": {
+      "sha256": "2e661058917f683a25bce480015197f0a2c1911bcbc2b9dd9d947199069c9618",
+      "bytes": 3284
+    },
+    "libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.bddl": {
+      "sha256": "3f552805c7ab34c44debcf38a48b8131d6fee3011dd86c039650b84e0f77d058",
+      "bytes": 3267
+    },
+    "libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl": {
+      "sha256": "0c6749b920bff1e1efe47ffb0e0b801a3e6959a650e710f376dd2b812c74e865",
+      "bytes": 2241
+    },
+    "libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl": {
+      "sha256": "dbc9464b424cdc9b771b92d0b8a8c185b1b539f6a4133b323dc858bcf8f6a9c2",
+      "bytes": 2458
+    },
+    "libero/libero/bddl_files/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl": {
+      "sha256": "07ca32c940d70c065e870452ef9c63e6dfa1d8506e6a86cf9b3763f652ba2d9f",
+      "bytes": 2055
+    },
+    "libero/libero/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl": {
+      "sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b",
+      "bytes": 2943
+    },
+    "libero/libero/bddl_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl": {
+      "sha256": "3056e4dc72ee590432cfb18c610fd077a572c8b8f256e45328031005dd0b6757",
+      "bytes": 2998
+    },
+    "libero/libero/bddl_files/libero_goal/push_the_plate_to_the_front_of_the_stove.bddl": {
+      "sha256": "26f22f8ad39a4b2b344b049115c45661a877fa0b4821fb78246725e7e87d8c0b",
+      "bytes": 2964
+    },
+    "libero/libero/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl": {
+      "sha256": "358b7781437e412c67d6a7648c1c28796b6b1bf117a25e61316cb8dfeb940e5b",
+      "bytes": 2927
+    },
+    "libero/libero/bddl_files/libero_goal/put_the_bowl_on_the_stove.bddl": {
+      "sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+      "bytes": 2961
+    },
+    "libero/libero/bddl_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.bddl": {
+      "sha256": "2ffba859a154f50c3c99ffb3420743fa5aa65c70bf7d4cd26f5bc81d07be5713",
+      "bytes": 2975
+    },
+    "libero/libero/bddl_files/libero_goal/put_the_cream_cheese_in_the_bowl.bddl": {
+      "sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+      "bytes": 2948
+    },
+    "libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_the_rack.bddl": {
+      "sha256": "3d3ee18139056aa3780572cde17b1c50dc20ae0d299403f65e514e8471ba0e8e",
+      "bytes": 2953
+    },
+    "libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl": {
+      "sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+      "bytes": 2972
+    },
+    "libero/libero/bddl_files/libero_goal/turn_on_the_stove.bddl": {
+      "sha256": "cbd2a0514d53226c5d09e17af40b22935d4cb6ff8fdaff0d55f555de1adecc13",
+      "bytes": 2891
+    },
+    "libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl": {
+      "sha256": "9b59eb1287802868ad9bc78d58e6d36d4ba31134e679cfdbdf4b0feb660c959b",
+      "bytes": 3035
+    },
+    "libero/libero/benchmark/__init__.py": {
+      "sha256": "4ce6edbb00b3280692f2e2b2e8a14bf6e2d5878965b0484a386c0355a867ecc5",
+      "bytes": 6108
+    },
+    "libero/libero/benchmark/libero_suite_task_map.py": {
+      "sha256": "0c950df0a785aa55de968bb38ccd865d2017f71ddbe6f48cfd05ac0742b6d62d",
+      "bytes": 9775
+    },
+    "libero/libero/benchmark/mu_creation.py": {
+      "sha256": "1aca2195e1b5ffb91ff22becb08763a060697584d887dd65fa1bc40ec99558fa",
+      "bytes": 49217
+    },
+    "libero/libero/envs/__init__.py": {
+      "sha256": "b99601b6b44de6d0078baa66054113881492826bbfbe8cd41e2d39d5bf6f0875",
+      "bytes": 267
+    },
+    "libero/libero/envs/arenas/__init__.py": {
+      "sha256": "a148bff0a3b0eb37b1d9d22579fbf3b05c7a26753ea026f5621576aa3f82fcb1",
+      "bytes": 259
+    },
+    "libero/libero/envs/arenas/coffee_table_arena.py": {
+      "sha256": "a1321848013495e1194c495eecb6c9da36e2260ce64ec636aea6f404e35abc04",
+      "bytes": 1107
+    },
+    "libero/libero/envs/arenas/empty_arena.py": {
+      "sha256": "1032b22ff518a37dd94609a525291082e1ac7151abc2d509e76b588625437260",
+      "bytes": 1087
+    },
+    "libero/libero/envs/arenas/kitchen_arena.py": {
+      "sha256": "fab3692ad931ce3e910b318626cd3d1f8c67a0100fbdb9fb28b6118fe42ec8f1",
+      "bytes": 5109
+    },
+    "libero/libero/envs/arenas/living_room_arena.py": {
+      "sha256": "8267ca85d85a4b83815543f1f5405002da81b0462259c1ca45a146b612277581",
+      "bytes": 1638
+    },
+    "libero/libero/envs/arenas/study_arena.py": {
+      "sha256": "274c663111069f77795151667e962afaa78ab43ea45d206f6b202c8cfba40387",
+      "bytes": 4473
+    },
+    "libero/libero/envs/arenas/style.py": {
+      "sha256": "e9ccc2a8d68be6e8d831d4cd683e022ac05fb7ba62fb3a2a5c9b716cf997a409",
+      "bytes": 1027
+    },
+    "libero/libero/envs/arenas/table_arena.py": {
+      "sha256": "a47a23d3736d35b34b279f90f267f9f3fa2426431a96c8f038d18ed44cc9a834",
+      "bytes": 5102
+    },
+    "libero/libero/envs/base_object.py": {
+      "sha256": "88ee0d4b2a39f39437d97fb12ec08831cb5064e23a7456d2f882e3baab246f1a",
+      "bytes": 645
+    },
+    "libero/libero/envs/bddl_base_domain.py": {
+      "sha256": "055836670ac5fcac7e033fc86404718fd53854996e5776b1ff68b646f7bbcc9d",
+      "bytes": 32639
+    },
+    "libero/libero/envs/bddl_utils.py": {
+      "sha256": "f8148a5054e7818cee1ceddda300ff9f15272f8e6600389abd38f102e477cd8c",
+      "bytes": 6232
+    },
+    "libero/libero/envs/env_wrapper.py": {
+      "sha256": "a782fb76c9792268d28979474fe72849e1e98ada49c8e997a65359a8d6b6acd0",
+      "bytes": 8781
+    },
+    "libero/libero/envs/object_states/__init__.py": {
+      "sha256": "1fb9ad68a61066a7a4986f3f5f8610ba4d725b290e3d8944ab628d3e9f8a2d9f",
+      "bytes": 34
+    },
+    "libero/libero/envs/object_states/base_object_states.py": {
+      "sha256": "ca6f53123336b6487bdb4feb02534ddb3a0627a4b847fe89da4460520ef01366",
+      "bytes": 8215
+    },
+    "libero/libero/envs/objects/__init__.py": {
+      "sha256": "cced646bb88ab95e21b5475d8d7dc46a5db4e6c881c63637a1a27e15dd844c04",
+      "bytes": 427
+    },
+    "libero/libero/envs/objects/articulated_objects.py": {
+      "sha256": "f5187b0381d69a2a8736c1dcb646e5fa7c138a42950f92e30c21c2efaed52faa",
+      "bytes": 8126
+    },
+    "libero/libero/envs/objects/google_scanned_objects.py": {
+      "sha256": "626e25dfa8b102f7f7b406ef6a997003f1308b48cf52e7c22762e9eb86a1ec4c",
+      "bytes": 2457
+    },
+    "libero/libero/envs/objects/hope_objects.py": {
+      "sha256": "70ee607faf5dca4f69c5db96fbf79080990b7c39a0f08d99b074c67f0acbd62d",
+      "bytes": 6814
+    },
+    "libero/libero/envs/objects/site_object.py": {
+      "sha256": "4907bf2550945c395b85fd92725763ada4da533ad50966eb179e637dabeeebf6",
+      "bytes": 3028
+    },
+    "libero/libero/envs/objects/target_zones.py": {
+      "sha256": "49a14627103648fbb620c3a6c1ae14f52fae6e2f4db81b0074e602f01aaf7205",
+      "bytes": 3005
+    },
+    "libero/libero/envs/objects/turbosquid_objects.py": {
+      "sha256": "4de4205eabb588600fd9669f6ee6e2ef12e47e13d9b421257215d34f836f9804",
+      "bytes": 5346
+    },
+    "libero/libero/envs/predicates/__init__.py": {
+      "sha256": "e059a52d635ae4bdfe0e4bd6f0a0ca9b53a04444b39b53664fffb38d0838679e",
+      "bytes": 888
+    },
+    "libero/libero/envs/predicates/base_predicates.py": {
+      "sha256": "319137e95330dbb22a266a8dceb8110f18413c2bf17461550222228c4bc310a1",
+      "bytes": 2650
+    },
+    "libero/libero/envs/problems/__init__.py": {
+      "sha256": "2d1980568bf81fe7c27f62ed59a2c0376722f726654eb07ced6ea8c6bce017bc",
+      "bytes": 489
+    },
+    "libero/libero/envs/problems/libero_coffee_table_manipulation.py": {
+      "sha256": "cd04e469c3e8852421cbec73c92c4bbe135ef8eb0a36c12851eb912101a3cd94",
+      "bytes": 8804
+    },
+    "libero/libero/envs/problems/libero_floor_manipulation.py": {
+      "sha256": "38fce9925399651977033647525a64c28f50d45a110d72ecf35efa92054e9234",
+      "bytes": 8644
+    },
+    "libero/libero/envs/problems/libero_kitchen_tabletop_manipulation.py": {
+      "sha256": "e5ea541118d19aa120d08ffec655da0f65d2e2a21c2045cd49e7e0a73f695cd3",
+      "bytes": 9278
+    },
+    "libero/libero/envs/problems/libero_living_room_tabletop_manipulation.py": {
+      "sha256": "a13bc0a92ff746d572a6d76e09add98dafad70d88928555068728641c6c9de10",
+      "bytes": 9320
+    },
+    "libero/libero/envs/problems/libero_study_tabletop_manipulation.py": {
+      "sha256": "a25d06b4dda1ecd5dbf7083145cc2720639db55c0485ca0983da0202a2e756ca",
+      "bytes": 9277
+    },
+    "libero/libero/envs/problems/libero_tabletop_manipulation.py": {
+      "sha256": "0defb17c0bbab8f6bd34c021ac15598ea101fe1e48690cb440d4ef92762880fe",
+      "bytes": 8877
+    },
+    "libero/libero/envs/regions/__init__.py": {
+      "sha256": "64fd7ecbbb1b7fe04b0c2240e0f6c79419cba1b29db8f7f13a91ab2718cce5ed",
+      "bytes": 1447
+    },
+    "libero/libero/envs/regions/base_region_sampler.py": {
+      "sha256": "08c12685b443d723bdffc3e1820cfb1a9b54eeda54a261ccaeacb7f04f9ab88d",
+      "bytes": 36263
+    },
+    "libero/libero/envs/regions/object_property_sampler.py": {
+      "sha256": "051fbce5a9aadcdf26bd42b447c1b677e610e0e539132807a3ffb578b6feab60",
+      "bytes": 4476
+    },
+    "libero/libero/envs/regions/workspace_region_sampler.py": {
+      "sha256": "66b8ce7f7eb18e316fdc1a44a4210ee0a25a24e9a9d49be88dde970960a58b75",
+      "bytes": 9770
+    },
+    "libero/libero/envs/robots/__init__.py": {
+      "sha256": "92d2667dcd9fce0d0ba744bcc317bfc07104136e90f066df04d09cbad5bd489e",
+      "bytes": 307
+    },
+    "libero/libero/envs/robots/mounted_panda.py": {
+      "sha256": "c89ab36decca6d9fa242021971513960c3ce31aa42735009c73258f397be126c",
+      "bytes": 1658
+    },
+    "libero/libero/envs/robots/on_the_ground_panda.py": {
+      "sha256": "7d580aeee632e164f327cf6b1951861bec40cf814cdbe92bcfc469a93e1f9fa8",
+      "bytes": 1726
+    },
+    "libero/libero/envs/textures.py": {
+      "sha256": "bcc631c6da38a148db316862d847222361ddc0416277dd6c860c70a3c437bf17",
+      "bytes": 2985
+    },
+    "libero/libero/envs/utils.py": {
+      "sha256": "81813480479dbd7fd938479dcdc17c258608b3ea4efdefc3e13aff100a89fd6a",
+      "bytes": 12174
+    },
+    "libero/libero/envs/venv.py": {
+      "sha256": "a970353a592190152f313424738b05457f8e10cbafc7303c756b85aa9425d1e7",
+      "bytes": 35315
+    },
+    "libero/libero/init_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.pruned_init": {
+      "sha256": "02a8401f8d59f5447fc8c5a16f4c158dd8c426c3eaed6779927a2a53e9abf3c5",
+      "bytes": 22959
+    },
+    "libero/libero/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init": {
+      "sha256": "e98ded151f64a036c74c872336dd09b968c379f3c9db7bc333aba37e7c235b86",
+      "bytes": 24815
+    },
+    "libero/libero/init_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.pruned_init": {
+      "sha256": "6b75c8d4d1e1c40b5d99c78ceea380d99ccffb0a484a4cb2d3153488a0afbbe2",
+      "bytes": 23663
+    },
+    "libero/libero/init_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.pruned_init": {
+      "sha256": "44f992e911c84a1340589510ecdaf947a4872966f7678c8364d8bb5d13dc4dac",
+      "bytes": 22831
+    },
+    "libero/libero/init_files/libero_10/LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.pruned_init": {
+      "sha256": "2113ea5923fcbbe1b57b428383934496072f062729d0b72d3021573d55d25abc",
+      "bytes": 40879
+    },
+    "libero/libero/init_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.pruned_init": {
+      "sha256": "1899fe54c51e24a41d5f9e32254730d6777f4894ab68e0e873f1fa7ae2062030",
+      "bytes": 58927
+    },
+    "libero/libero/init_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.pruned_init": {
+      "sha256": "f8ac06ea8f43bb328d40cba1e6a9767da2f8f5386fd7ff3f845c64a96bf6d2ce",
+      "bytes": 58991
+    },
+    "libero/libero/init_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.pruned_init": {
+      "sha256": "b6f20784b381c75d715f4fdaadda1fb460cbe24adcbad76f381a009419b8474e",
+      "bytes": 41775
+    },
+    "libero/libero/init_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.pruned_init": {
+      "sha256": "6e811394c4ff9a43ae23515d8512e9b657c04344b94dd5baed121b595490514f",
+      "bytes": 35119
+    },
+    "libero/libero/init_files/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.pruned_init": {
+      "sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+      "bytes": 22831
+    },
+    "libero/libero/init_files/libero_goal/open_the_middle_drawer_of_the_cabinet.pruned_init": {
+      "sha256": "977efe1216bee72bb4e9fa9ec4be1bcfe37fb00ece815eac117feba019b34b9f",
+      "bytes": 37615
+    },
+    "libero/libero/init_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.pruned_init": {
+      "sha256": "1cd5354ade9ab9f323a518515f961df96123b7daeca017df1f62d3e9ff18794f",
+      "bytes": 37551
+    },
+    "libero/libero/init_files/libero_goal/push_the_plate_to_the_front_of_the_stove.pruned_init": {
+      "sha256": "794beed679b18bbd7d9fb851c81877a974915ad63addff2d5ac5af0607fafac9",
+      "bytes": 37551
+    },
+    "libero/libero/init_files/libero_goal/put_the_bowl_on_the_plate.pruned_init": {
+      "sha256": "ef3466ffad734754dc40eba1f6f5712e37aa46b9692c595e0da34f16d3a0c668",
+      "bytes": 37615
+    },
+    "libero/libero/init_files/libero_goal/put_the_bowl_on_the_stove.pruned_init": {
+      "sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+      "bytes": 37551
+    },
+    "libero/libero/init_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.pruned_init": {
+      "sha256": "c0b7baf82f36f5304488bac91d788800a1c93d0a9fd19a73f448992d5366e145",
+      "bytes": 37615
+    },
+    "libero/libero/init_files/libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init": {
+      "sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+      "bytes": 37551
+    },
+    "libero/libero/init_files/libero_goal/put_the_wine_bottle_on_the_rack.pruned_init": {
+      "sha256": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+      "bytes": 37487
+    },
+    "libero/libero/init_files/libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init": {
+      "sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+      "bytes": 37551
+    },
+    "libero/libero/init_files/libero_goal/turn_on_the_stove.pruned_init": {
+      "sha256": "ed121db31d749647d70741c4c4ef0bd8e0876663986578795968e962d9b91340",
+      "bytes": 37551
+    },
+    "libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.pruned_init": {
+      "sha256": "cbbc73792ce546c9bec181fd328a411d3183074840b282671dee481511381d0a",
+      "bytes": 44271
+    },
+    "libero/libero/utils/__init__.py": {
+      "sha256": "fb382c7a116e6b9da49c6b8c53209f7a2825a12a640f3b007b663435ae19ce46",
+      "bytes": 1738
+    },
+    "libero/libero/utils/bddl_generation_utils.py": {
+      "sha256": "2ff3fe4d5c72358970f6e3a1f38ceabe6098b92949d5fc8b1c209db74085eca8",
+      "bytes": 13546
+    },
+    "libero/libero/utils/dataset_utils.py": {
+      "sha256": "e082f99790ebaabb65b762fb59727b93f3ca7addb3b0d3fea56dfe9cec97c81a",
+      "bytes": 3877
+    },
+    "libero/libero/utils/download_utils.py": {
+      "sha256": "614d4233e633bd3ba98377bcad90f38f70b5b8218b1825dda2b943d4ba302dbc",
+      "bytes": 8877
+    },
+    "libero/libero/utils/log_utils.py": {
+      "sha256": "b1e0e938dba6c5d6273b4aee3c7489a486ee53b1e450e3efba8601547402d8e1",
+      "bytes": 1445
+    },
+    "libero/libero/utils/mu_utils.py": {
+      "sha256": "98fd321045dc5687722c89a79e64a7a3583b47cbed948aebfac98e3243d18bc9",
+      "bytes": 4520
+    },
+    "libero/libero/utils/object_utils.py": {
+      "sha256": "e001887c73726b4ae87e6f2c4931135cc4e60d707b2dc668bb77360bef9b00b6",
+      "bytes": 1876
+    },
+    "libero/libero/utils/task_generation_utils.py": {
+      "sha256": "262c952f6484bbc2f39ee33e634662ed47b8e564509df737a3dbad01cb23301a",
+      "bytes": 3420
+    },
+    "libero/libero/utils/time_utils.py": {
+      "sha256": "b853805998ca83717dbf14e3d7e4e724fc3979b9ca18a3bd6c9bd25d8d7029de",
+      "bytes": 318
+    },
+    "libero/libero/utils/utils.py": {
+      "sha256": "30e78e4f05a9ef25d6ccf55e3d7ab5739b39f58c098a9ab91b78fb57919ea6ba",
+      "bytes": 2257
+    },
+    "libero/libero/utils/video_utils.py": {
+      "sha256": "bf049b7541a2df044f0338d00c8b005e4bc24cc79d698cc4683c457bac2ffc90",
+      "bytes": 2965
+    },
+    "libero/lifelong/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "libero/lifelong/algos/__init__.py": {
+      "sha256": "aea46b63109260d82db6e3f16fff06c6238cf313c19e247454c3e21835276228",
+      "bytes": 368
+    },
+    "libero/lifelong/algos/agem.py": {
+      "sha256": "56730a8b23e23fc6279753910a259b303c5aa4cc7ac773d366500843ee260aad",
+      "bytes": 3785
+    },
+    "libero/lifelong/algos/base.py": {
+      "sha256": "2cdf82c29af629df4c6625c74a45a7b7b36b6f605d0d8d4659f76811fc4c6658",
+      "bytes": 9171
+    },
+    "libero/lifelong/algos/er.py": {
+      "sha256": "ba5c1e8d852e55c9a7a5b20805d4a9158998cb358b93c0faed62ccf9b72824bc",
+      "bytes": 2654
+    },
+    "libero/lifelong/algos/ewc.py": {
+      "sha256": "56eb3e8ee6885aa858aea021d8d05d710f5639b7ecfb78a1a18058dd7858825b",
+      "bytes": 2701
+    },
+    "libero/lifelong/algos/multitask.py": {
+      "sha256": "0b309a8ed8d62adb917caa465ac7f3ab6cba32451dd19b3987eeea57eca4c9b2",
+      "bytes": 5663
+    },
+    "libero/lifelong/algos/packnet.py": {
+      "sha256": "34e6c7f42d781fae2f824068d9a5121971a7e1feba2e05a292e893e48e88a226",
+      "bytes": 11536
+    },
+    "libero/lifelong/algos/single_task.py": {
+      "sha256": "d76a8ee4ff570ed491cc5f5939b725690f4a5f18a597a739bdd922ad0ab6f99f",
+      "bytes": 426
+    },
+    "libero/lifelong/datasets.py": {
+      "sha256": "084b54d78bac4383e64d5ca8b944e3ebf005bf84ca6ff76153be37fa80bf671a",
+      "bytes": 4681
+    },
+    "libero/lifelong/evaluate.py": {
+      "sha256": "84dea8f168406884e460acd5df9d2dcab5802e297b9a7b4333a5c17fcb24b50f",
+      "bytes": 9719
+    },
+    "libero/lifelong/init_path.py": {
+      "sha256": "4cbdf2d2a452956db9d0d028211a35795c91e571a62669c8abeaf1fc0fdc038e",
+      "bytes": 119
+    },
+    "libero/lifelong/main.py": {
+      "sha256": "90bf55a80edaf13856615d5483cbb6ad6f4973bce4dc2ca8915a956bf52841b2",
+      "bytes": 10642
+    },
+    "libero/lifelong/metric.py": {
+      "sha256": "4fe37407f23cd9c1ceb4c93670f308d2fed6d34b2c2139d86123702c849cabcb",
+      "bytes": 7572
+    },
+    "libero/lifelong/models/__init__.py": {
+      "sha256": "fde5734e188b4322492696fb5b026e88c10cbf7bf89fa5ffadbc12abf684c6d8",
+      "bytes": 283
+    },
+    "libero/lifelong/models/base_policy.py": {
+      "sha256": "eece2b35bdcdee639ad012e13e1f56783fb6108146dc110c168c069913936363",
+      "bytes": 3854
+    },
+    "libero/lifelong/models/bc_rnn_policy.py": {
+      "sha256": "c0d12743e4ad31a19747fee526c8493f6b1fbf7e8af39afe93fe0c88a6aa88f3",
+      "bytes": 7433
+    },
+    "libero/lifelong/models/bc_transformer_policy.py": {
+      "sha256": "41c98aa445432eca58b31293148dd20b726e95f34d3cfb55f4358e0af63016e9",
+      "bytes": 11074
+    },
+    "libero/lifelong/models/bc_vilt_policy.py": {
+      "sha256": "a87a8f5bc72d505bbd21d4c87c171632f494e5036c0b79a048e4cf6b6bca1465",
+      "bytes": 9431
+    },
+    "libero/lifelong/models/modules/data_augmentation.py": {
+      "sha256": "b950cd11385d2004bc53475590b6de3f4055d54dbe9ddbe6f6b310820eff5461",
+      "bytes": 4633
+    },
+    "libero/lifelong/models/modules/language_modules.py": {
+      "sha256": "0bed095e3acfe7405712840db5aed93f95563e579325bad96641a0a10c3beda1",
+      "bytes": 1303
+    },
+    "libero/lifelong/models/modules/rgb_modules.py": {
+      "sha256": "d99f0ec64eef3de0f6b28cbd4f30b6ea8a5e1d4322657124dd867b1906c6d325",
+      "bytes": 8440
+    },
+    "libero/lifelong/models/modules/transformer_modules.py": {
+      "sha256": "62f5beee1e69fbf5e7d4ce3d8dc0bd93ad08c44683fdbd2416a5fadf81332411",
+      "bytes": 8326
+    },
+    "libero/lifelong/models/policy_head.py": {
+      "sha256": "8a5ad5890e84c700d26bfde58c6de833107e6ceab832494ce803ae47a027d4e0",
+      "bytes": 3450
+    },
+    "libero/lifelong/utils.py": {
+      "sha256": "d1df48c6984a2938d60eebf70ba1c61cd2ea512e859fa0ed11abfc550beee3f1",
+      "bytes": 7707
+    },
+    "pyproject.toml": {
+      "sha256": "6be7a77a5eef508fd75786e314297d3c912a81baf2a514908a0741b46e3d9ef5",
+      "bytes": 447
+    },
+    "requirements.txt": {
+      "sha256": "b7d3093bb5e2f424c54396a2731bf26ea185bd3fbff79b561571a92400958130",
+      "bytes": 274
+    },
+    "scripts/check_dataset_integrity.py": {
+      "sha256": "1b5c53ad3b39383ee21e0ddfc1d2d36a5786010a285ef8a0c82b78a3f3c497f6",
+      "bytes": 1280
+    },
+    "scripts/collect_demonstration.py": {
+      "sha256": "b0529ba1526eda5d10cc3db85c74628c95fda7a36ea420cb777bba8c44c4d311",
+      "bytes": 11104
+    },
+    "scripts/config_copy.py": {
+      "sha256": "ffa1bc1f377900f03e7bfb590bf13630387e8fa0d804f0ac8319a9a6f8be58dd",
+      "bytes": 554
+    },
+    "scripts/create_dataset.py": {
+      "sha256": "6ff09687a6ca8cb5df16b828cce2326467099da2b4dd6e5af557644d3e60f37f",
+      "bytes": 8813
+    },
+    "scripts/create_libero_task_example.py": {
+      "sha256": "0757a9180679d330df0aa881fac5bb4c3fd20365d38d691780381ee18616bf8b",
+      "bytes": 3165
+    },
+    "scripts/create_template.py": {
+      "sha256": "72cc45c9537e56f5a6ed3f0ef3844e38ee8bf526550fb279a5c31236548ac488",
+      "bytes": 3931
+    },
+    "scripts/get_affordance_info.py": {
+      "sha256": "46ff599673538f59d94dd9d65b83407f7286e1a4adf03ac5721cee309b057c5c",
+      "bytes": 300
+    },
+    "scripts/get_dataset_info.py": {
+      "sha256": "bdca2467cca46adfc7af27e617c14f3c3d3bb25598078557407705e230fee892",
+      "bytes": 5699
+    },
+    "scripts/init_path.py": {
+      "sha256": "4cbdf2d2a452956db9d0d028211a35795c91e571a62669c8abeaf1fc0fdc038e",
+      "bytes": 119
+    },
+    "scripts/libero_100_collect_demonstrations.py": {
+      "sha256": "3ba998301c95d29c2d4002c7d5da45b3e3ab4cc93853145d4e9027ace28c7549",
+      "bytes": 11742
+    },
+    "setup.py": {
+      "sha256": "90a131d10397c5bc910b7a3cb946a597ba1118e96ff405bf5b856b3a7b98554e",
+      "bytes": 1276
+    },
+    "templates/problem_class_template.py": {
+      "sha256": "3af836092825ece6a8da68aca71b5e834c9518411362a66325e6cf10e006ba5c",
+      "bytes": 9691
+    }
+  }
+}

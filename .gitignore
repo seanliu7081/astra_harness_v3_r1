@@ -1,0 +1,23 @@
+# Local installations and caches
+.venv*/
+.local/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.cache/
+build/
+dist/
+# Credentials and generated data
+.private/
+.env
+.env.*
+!.env.example
+runs/
+artifacts/
+*.log
+validation/results/
+# Editors
+.vscode/
+.idea/
+.DS_Store

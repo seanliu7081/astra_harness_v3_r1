@@ -1,0 +1,11 @@
+{
+  "task": "t04_can_obstacle",
+  "episode_index": 0,
+  "seed": 7,
+  "source": "archived astra_tools_r1 two-task inputs, 2026-11-11",
+  "files": {
+    "custom_task.bddl": "5c808defda474b6dac7490d0ad5d36c38d2fa04e432344fee1046011c5499459",
+    "initial_observation.sha256": "e2325d5280246733bf9ea258347bef111115052cd3a8be478cac809b68f84ecf",
+    "initial_state.npy": "76e81e7877e0e4c6d14638b644a6a8ebbd6c81f0d744318990debf9d59dc5642"
+  }
+}

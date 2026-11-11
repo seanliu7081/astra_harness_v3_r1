@@ -1,0 +1,11 @@
+{
+  "task": "t08_bottle_obstacle",
+  "episode_index": 0,
+  "seed": 7,
+  "source": "archived astra_tools_r1 two-task inputs, 2026-11-11",
+  "files": {
+    "custom_task.bddl": "54bc8d32240afeafeb579867723d6e2819a4e7318950e5f57e6cf5d3c936ddac",
+    "initial_observation.sha256": "ec29cad1a146498726d8f8f1d59ee8de9a84e3506b94da73192d79fa8ffcf67a",
+    "initial_state.npy": "cb246c6ebd261ebc71899c45b4019f6f01a32cbdd0a8e6dcbf9bd8038972a034"
+  }
+}

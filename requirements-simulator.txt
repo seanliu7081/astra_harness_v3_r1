@@ -1,0 +1,21 @@
+# Simulator environment: CPython 3.10; native controller/physics pins from the frozen baseline.
+# setup.sh first installs torch from the official CPU wheel index. Torch is used
+# only for initial-state loading and seed setup, not learned policy inference.
+numpy==1.26.4
+Pillow==12.3.0
+mujoco==3.2.6
+robosuite==1.4.1
+torch==2.10.0
+numba==0.64.0
+llvmlite==0.46.0
+scipy==1.15.3
+opencv-python==4.10.0.84
+matplotlib==3.10.8
+bddl==3.6.0
+easydict==1.13
+PyYAML==6.0.3
+gym==0.26.2
+cloudpickle==3.1.2
+glfw==2.10.0
+PyOpenGL==3.1.10
+termcolor==3.3.0

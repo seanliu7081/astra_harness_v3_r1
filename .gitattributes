@@ -1,0 +1,9 @@
+* text=auto
+*.sh text eol=lf
+*.npy binary
+*.pruned_init binary
+*.png binary
+*.jpg binary
+*.msh binary
+*.stl binary
+*.whl binary

@@ -1,0 +1,11 @@
+{
+  "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+  "packages": {
+    "mujoco": "3.2.6",
+    "robosuite": "1.4.1",
+    "torch": "2.10.0+cpu",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0"
+  },
+  "png_encoder": "2.3.3"
+}

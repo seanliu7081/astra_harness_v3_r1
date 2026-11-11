@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astra-harness-v3-r1"
+version = "0.1.0"
+description = "Standalone foundation_vision_harness_V3, frozen astra_tools_r1"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy==1.17.1",
+  "Pillow==12.3.0",
+  "PyJWT==2.15.1",
+  "cryptography==50.0.2",
+  "opencv-python-headless==4.10.0.84",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+gpt_field = ["*.json", "*.html", "assets/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

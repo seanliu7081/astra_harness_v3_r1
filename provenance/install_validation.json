@@ -1,0 +1,374 @@
+{
+  "libero_files_verified": 293,
+  "kinematics": {
+    "version": "robodojo-direct-panda-ik-1",
+    "robot_xml": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/models/assets/robots/panda/robot.xml",
+    "gripper_xml": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/models/assets/grippers/panda_gripper.xml",
+    "robot_xml_sha256": "263c0f9abacbc8686027ec5545bee144481cbcf5cc74aa421cbe3227030cd95e",
+    "gripper_xml_sha256": "d9d68123909d6910488310d0fae4e358ed4ac831c6d0957f3e30893a5412baac",
+    "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6",
+      "joint7"
+    ],
+    "grip_offset_in_right_hand_m": [
+      0.0,
+      0.0,
+      0.097
+    ],
+    "scene_geometry": false,
+    "collision_checking": false,
+    "mount_source": "measured state8 pose and measured arm joint positions"
+  },
+  "controller_packages": {
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0",
+    "scipy": "1.17.1",
+    "opencv-python-headless": "4.10.0.84",
+    "PyJWT": "2.15.1",
+    "cryptography": "50.0.2"
+  },
+  "transit_action_m": 0.1,
+  "osc_translation_scale_m": 0.1,
+  "checks": [
+    {
+      "kind": "clean_install_reset_only",
+      "task": "t04_can_obstacle",
+      "policy_actions": 0,
+      "model_calls": 0,
+      "initial_observation_sha256": "06f623f31ee2ea2e8ef600ce29d299413d81a8647d8f59663f3aff2e660da187",
+      "expected_initial_observation_sha256": "06f623f31ee2ea2e8ef600ce29d299413d81a8647d8f59663f3aff2e660da187",
+      "matches": true,
+      "metadata": {
+        "protocol": "gpt-field-libero-jsonl-v1",
+        "benchmark_variant": "LIBERO task with custom scene and initial layout (explicit checkout)",
+        "libero_source": {
+          "root": "/workspace/astra_harness_v3_r1/third_party/LIBERO",
+          "git_commit": null,
+          "python_tree_sha256": "ddd318ab2a023ea09d68bdd7c581d22a064d7204471fb26a736c6f91ed9d014d",
+          "python_files": 100
+        },
+        "packages": {
+          "robosuite": "1.4.1",
+          "mujoco": "3.2.6",
+          "torch": "2.10.0+cpu",
+          "numpy": "1.26.4",
+          "Pillow": "12.3.0"
+        },
+        "python_executable": "/workspace/astra_harness_v3_r1/.venv-sim/bin/python",
+        "suite": "libero_10",
+        "task_order_index": 0,
+        "task_count": 10,
+        "seed": 7,
+        "initial_states_per_task": 50,
+        "max_policy_steps": null,
+        "settle_steps": 10,
+        "image_size": 512,
+        "render_size": 512,
+        "image_protocol": "render RGB -> rotate 180 degrees -> bilinear resize with centered black padding",
+        "mujoco_gl": "egl",
+        "controller": {
+          "type": "OSC_POSE",
+          "input_max": 1,
+          "input_min": -1,
+          "output_max": [
+            0.1,
+            0.1,
+            0.1,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "output_min": [
+            -0.1,
+            -0.1,
+            -0.1,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "kp": 150,
+          "damping_ratio": 1,
+          "impedance_mode": "fixed",
+          "kp_limits": [
+            0,
+            300
+          ],
+          "damping_ratio_limits": [
+            0,
+            10
+          ],
+          "position_limits": null,
+          "orientation_limits": null,
+          "uncouple_pos_ori": true,
+          "control_delta": true,
+          "interpolation": null,
+          "ramp_ratio": 0.2
+        },
+        "controller_sources": {
+          "osc": {
+            "path": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/controllers/osc.py",
+            "sha256": "cfa62a0e719bc53ef0c701efa66f7b3e2272d4fca2150ec73c05bb145eba85cb"
+          },
+          "control_utils": {
+            "path": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/utils/control_utils.py",
+            "sha256": "1d0f1a063894b1e8289339e223665e14e8aec492c31e9e00f42edea8dc735f43"
+          },
+          "panda_gripper": {
+            "path": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/models/grippers/panda_gripper.py",
+            "sha256": "a3760a8fc4599fa6f79914304b82466f3c1bda1a945943ca693bb57f00dc59eb"
+          },
+          "osc_pose_config": {
+            "path": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/controllers/config/osc_pose.json",
+            "sha256": "07f3a8b41d3eecc8a36700a85bd8207ee3fbc36eb73f6a2248340c96770d1e45"
+          }
+        },
+        "action_order": [
+          "dx/0.1",
+          "dy/0.1",
+          "dz/0.1",
+          "world_rotvec_x/0.5",
+          "world_rotvec_y/0.5",
+          "world_rotvec_z/0.5",
+          "gripper_minus1_open_plus1_close"
+        ],
+        "success_source": "OffScreenRenderEnv.check_success()",
+        "control_freq_hz": 20,
+        "initial_state_override": {
+          "path": "/workspace/astra_harness_v3_r1/tasks/t04_can_obstacle/initial_state.npy",
+          "sha256": "76e81e7877e0e4c6d14638b644a6a8ebbd6c81f0d744318990debf9d59dc5642",
+          "shape": [
+            97
+          ],
+          "dtype": "float64"
+        },
+        "task_bddl_override": {
+          "path": "/workspace/astra_harness_v3_r1/tasks/t04_can_obstacle/custom_task.bddl",
+          "sha256": "5c808defda474b6dac7490d0ad5d36c38d2fa04e432344fee1046011c5499459",
+          "byte_count": 2501
+        },
+        "v2_sim_version": "agent-speedup-v2-sim-v2",
+        "base_collision_check_mode": "none",
+        "collision_check_mode": "generic_contact_v2",
+        "stop_on_collision": false,
+        "collision_policy": "record_only",
+        "success_qualification": "raw_libero_goal",
+        "collision_monitoring": {
+          "mode": "generic_contact_v2",
+          "version": "agent-speedup-v2-generic-contact-v2",
+          "rule_table": null,
+          "goal_aware": true,
+          "sampling": "every actual physics substep and final control endpoint",
+          "chained_v1_monitor": null
+        },
+        "evaluator_ops": [
+          "truth",
+          "settle_truth",
+          "answer_key",
+          "geometry",
+          "oracle"
+        ],
+        "monitor_options": {
+          "goal_aware": true,
+          "truth_window": true
+        },
+        "oracle_enabled": false,
+        "user_check_osc_translation_scale_m": 0.1,
+        "original_bddl_file": "/workspace/astra_harness_v3_r1/third_party/LIBERO/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+        "original_bddl_sha256": "0c6749b920bff1e1efe47ffb0e0b801a3e6959a650e710f376dd2b812c74e865",
+        "task_bddl_override_file": "/workspace/astra_harness_v3_r1/tasks/t04_can_obstacle/custom_task.bddl",
+        "task_bddl_override_sha256": "5c808defda474b6dac7490d0ad5d36c38d2fa04e432344fee1046011c5499459",
+        "custom_task_contract": {
+          "language_preserved": true,
+          "goal_preserved": true,
+          "target_assets_preserved": true,
+          "target_assets": {
+            "plate_1": "plate",
+            "plate_2": "plate",
+            "porcelain_mug_1": "porcelain_mug",
+            "white_yellow_mug_1": "white_yellow_mug"
+          }
+        },
+        "user_check_controller_override": {
+          "translation_scale_m": 0.1,
+          "applied_after_reset": true,
+          "source_config_unchanged": true
+        },
+        "user_check_camera_geometry": true,
+        "model_geometry_op": "agent_geometry",
+        "model_robot_proprioception": "cached_observation_seven_arm_joints"
+      }
+    },
+    {
+      "kind": "clean_install_reset_only",
+      "task": "t08_bottle_obstacle",
+      "policy_actions": 0,
+      "model_calls": 0,
+      "initial_observation_sha256": "7f96963551a64fc826f1cbf549e81497ddb1f40258ad9ee7438bb81dc5411080",
+      "expected_initial_observation_sha256": "7f96963551a64fc826f1cbf549e81497ddb1f40258ad9ee7438bb81dc5411080",
+      "matches": true,
+      "metadata": {
+        "protocol": "gpt-field-libero-jsonl-v1",
+        "benchmark_variant": "LIBERO task with custom scene and initial layout (explicit checkout)",
+        "libero_source": {
+          "root": "/workspace/astra_harness_v3_r1/third_party/LIBERO",
+          "git_commit": null,
+          "python_tree_sha256": "ddd318ab2a023ea09d68bdd7c581d22a064d7204471fb26a736c6f91ed9d014d",
+          "python_files": 100
+        },
+        "packages": {
+          "robosuite": "1.4.1",
+          "mujoco": "3.2.6",
+          "torch": "2.10.0+cpu",
+          "numpy": "1.26.4",
+          "Pillow": "12.3.0"
+        },
+        "python_executable": "/workspace/astra_harness_v3_r1/.venv-sim/bin/python",
+        "suite": "libero_10",
+        "task_order_index": 0,
+        "task_count": 10,
+        "seed": 7,
+        "initial_states_per_task": 50,
+        "max_policy_steps": null,
+        "settle_steps": 10,
+        "image_size": 512,
+        "render_size": 512,
+        "image_protocol": "render RGB -> rotate 180 degrees -> bilinear resize with centered black padding",
+        "mujoco_gl": "egl",
+        "controller": {
+          "type": "OSC_POSE",
+          "input_max": 1,
+          "input_min": -1,
+          "output_max": [
+            0.1,
+            0.1,
+            0.1,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "output_min": [
+            -0.1,
+            -0.1,
+            -0.1,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "kp": 150,
+          "damping_ratio": 1,
+          "impedance_mode": "fixed",
+          "kp_limits": [
+            0,
+            300
+          ],
+          "damping_ratio_limits": [
+            0,
+            10
+          ],
+          "position_limits": null,
+          "orientation_limits": null,
+          "uncouple_pos_ori": true,
+          "control_delta": true,
+          "interpolation": null,
+          "ramp_ratio": 0.2
+        },
+        "controller_sources": {
+          "osc": {
+            "path": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/controllers/osc.py",
+            "sha256": "cfa62a0e719bc53ef0c701efa66f7b3e2272d4fca2150ec73c05bb145eba85cb"
+          },
+          "control_utils": {
+            "path": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/utils/control_utils.py",
+            "sha256": "1d0f1a063894b1e8289339e223665e14e8aec492c31e9e00f42edea8dc735f43"
+          },
+          "panda_gripper": {
+            "path": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/models/grippers/panda_gripper.py",
+            "sha256": "a3760a8fc4599fa6f79914304b82466f3c1bda1a945943ca693bb57f00dc59eb"
+          },
+          "osc_pose_config": {
+            "path": "/workspace/astra_harness_v3_r1/.venv-sim/lib/python3.10/site-packages/robosuite/controllers/config/osc_pose.json",
+            "sha256": "07f3a8b41d3eecc8a36700a85bd8207ee3fbc36eb73f6a2248340c96770d1e45"
+          }
+        },
+        "action_order": [
+          "dx/0.1",
+          "dy/0.1",
+          "dz/0.1",
+          "world_rotvec_x/0.5",
+          "world_rotvec_y/0.5",
+          "world_rotvec_z/0.5",
+          "gripper_minus1_open_plus1_close"
+        ],
+        "success_source": "OffScreenRenderEnv.check_success()",
+        "control_freq_hz": 20,
+        "initial_state_override": {
+          "path": "/workspace/astra_harness_v3_r1/tasks/t08_bottle_obstacle/initial_state.npy",
+          "sha256": "cb246c6ebd261ebc71899c45b4019f6f01a32cbdd0a8e6dcbf9bd8038972a034",
+          "shape": [
+            60
+          ],
+          "dtype": "float64"
+        },
+        "task_bddl_override": {
+          "path": "/workspace/astra_harness_v3_r1/tasks/t08_bottle_obstacle/custom_task.bddl",
+          "sha256": "54bc8d32240afeafeb579867723d6e2819a4e7318950e5f57e6cf5d3c936ddac",
+          "byte_count": 1794
+        },
+        "v2_sim_version": "agent-speedup-v2-sim-v2",
+        "base_collision_check_mode": "none",
+        "collision_check_mode": "generic_contact_v2",
+        "stop_on_collision": false,
+        "collision_policy": "record_only",
+        "success_qualification": "raw_libero_goal",
+        "collision_monitoring": {
+          "mode": "generic_contact_v2",
+          "version": "agent-speedup-v2-generic-contact-v2",
+          "rule_table": null,
+          "goal_aware": true,
+          "sampling": "every actual physics substep and final control endpoint",
+          "chained_v1_monitor": null
+        },
+        "evaluator_ops": [
+          "truth",
+          "settle_truth",
+          "answer_key",
+          "geometry",
+          "oracle"
+        ],
+        "monitor_options": {
+          "goal_aware": true,
+          "truth_window": true
+        },
+        "oracle_enabled": false,
+        "user_check_osc_translation_scale_m": 0.1,
+        "original_bddl_file": "/workspace/astra_harness_v3_r1/third_party/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+        "original_bddl_sha256": "ae1299a707d3e810096ad648948c517de40474bcdacca93a15e17d191e34454a",
+        "task_bddl_override_file": "/workspace/astra_harness_v3_r1/tasks/t08_bottle_obstacle/custom_task.bddl",
+        "task_bddl_override_sha256": "54bc8d32240afeafeb579867723d6e2819a4e7318950e5f57e6cf5d3c936ddac",
+        "custom_task_contract": {
+          "language_preserved": true,
+          "goal_preserved": true,
+          "target_assets_preserved": true,
+          "target_assets": {
+            "flat_stove_1": "flat_stove",
+            "moka_pot_1": "moka_pot",
+            "moka_pot_2": "moka_pot"
+          }
+        },
+        "user_check_controller_override": {
+          "translation_scale_m": 0.1,
+          "applied_after_reset": true,
+          "source_config_unchanged": true
+        },
+        "user_check_camera_geometry": true,
+        "model_geometry_op": "agent_geometry",
+        "model_robot_proprioception": "cached_observation_seven_arm_joints"
+      }
+    }
+  ]
+}
